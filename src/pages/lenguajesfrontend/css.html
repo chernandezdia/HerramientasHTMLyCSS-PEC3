@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Carla Hernández Díaz">
+    <meta name="description" content="Práctica 1 de las asignatura HTML y CSS">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript, Boilerplate, Babel, Parcel, Autoprefixer, PostCSS">
+
+    <title>PEC1 - Herramientas HTML y CSS</title>
+
+    <meta name="description" content="Página web sobre herramientas de diseño web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-color">
+            <img class="img-fluid img-uoc p-10 pl-20" src="../../img/logo.jpg" alt="Logo de la página web"
+                width="300px;">
+        </nav>
+        <div class="position-relative overflow-hidden text-center header mt-100">
+            <div class="col-md-7 p-lg-5 mx-auto mb-100">
+                <p class="font-weight-bold text-uppercase mb-0 medium">Todo sobre herramientas web</p>
+                <h1 class="display-4 text-uppercase text-center">Web Herramientas</h1>
+            </div>
+            <div class="product-device shadow-sm d-none d-md-block"></div>
+            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg" id="cont-navbar">
+            <button class="navbar-toggler bg-light navbar-light ml-10" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../../index.html">Inicio<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorías
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../lenguajes-frontend.html">Lenguajes del front-end</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../preprocesadores.html">Preprocesadores</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pages/contact.html">Contacto<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container md-bundler">
+            <div class="row bg-color-1 p-50">
+                <div class="col-lg-12">
+                    <h1 class="font-weight-italic">CSS o Hojas de Estilo en Cascada</h1>
+                    <hr>
+                    <div class="row text-justify">
+                        <div class="col-lg-12">
+                            <p><strong>CSS, que significa Hojas de Estilo en Cascada (Cascading Style Sheets)</strong>,
+                                es el lenguaje utilizado para describir la presentación de documentos HTML o XML, esto
+                                incluye varios lenguajes basados en XML como son XHTML o SVG. CSS describe como debe ser
+                                renderizado el elemento estructurado en pantalla, en papel, hablado o en otros medios.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <img class="img-fluid rounded pb-20" src="../../img/css.jpg"
+                                alt="Imagen principal de la página de detalle de CSS">
+                        </div>
+                        <div class="col-lg-8">
+                            <p>CSS es un lenguaje basado en reglas: definen reglas que especifican grupos de
+                                estilos que deben aplicarse a elementos particulares o grupos de elementos en su página
+                                web.<strong></p>
+
+                            <p><strong>CSS</strong> es uno de los lenguajes base de la Open Web y posee una
+                                especificación estandarizada
+                                por parte del W3C. Desarrollado en niveles, CSS1 es ahora obsoleto, CSS2.1 es una
+                                recomendación y CSS3, ahora dividido en módulos más pequeños, está progresando en camino
+                                al estándar.</p>
+                        </div>
+                        <div class="col-lg-12">
+                            <p>La regla se abre con un selector. Esto selecciona el elemento HTML que vamos a diseñar.
+                                En este caso, estamos diseñando encabezados de nivel uno (&lt;h1&gt;).</p>
+                            <p>Luego tenemos un conjunto de llaves { }. Dentro de ellas habrá una o más declaraciones,
+                                que tomarán la forma de pares de propiedades y valores. Cada par especifica una
+                                propiedad de los elementos que estamos seleccionando, luego un valor que nos gustaría
+                                dar a la propiedad.</p>
+                            <p>Antes de los dos puntos, tenemos la propiedad, y después de los dos puntos, el valor. Las
+                                propiedades CSS tienen diferentes valores permitidos, dependiendo de qué propiedad se
+                                esté especificando.</p>
+                            <p>
+                            <pre>
+                                    <code>
+                                        h1 {
+                                            color: red;
+                                            font-size: 5em;
+                                        }
+                                        
+                                        p {
+                                            color: black;
+                                        }
+                                    </code>
+                                </pre>
+                            </p>
+                            <p>Los estilos pueden ser hojas de estilo <strong>externas, internas o estilos en
+                                    línea</strong></p>
+                            <h5>Hoja de estilo externa</h5>
+                            <p>Podemos vincular una hoja de estilo externa a nuestra página. Este es el método más común
+                                y
+                                útil para adjuntar CSS a un documento, ya que puede vincular el CSS a varias páginas, lo
+                                que le permite diseñarlas todas con la misma hoja de estilo. En la mayoría de los casos,
+                                las diferentes páginas de un sitio se verán más o menos iguales, por lo tanto, puede
+                                usar el mismo conjunto de reglas para la apariencia básica.</p>
+                            <p>Una hoja de estilo externa es cuando tiene su CSS escrito en un archivo separado con una
+                                .cssextensión, y lo hace referencia desde un
+                                <link>elemento HTML:</p>
+                            <p>
+                            <pre>
+                                        <code>
+                                            &lt;!DOCTYPE html&gt;
+                                            &lt;html&gt;
+                                            &lt;head&gt;
+                                                &lt;meta charset=<q>utf-8</q>&gt;
+                                                &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+                                                &lt;link rel=<q>stylesheet</q> href=<q>styles.css</q>&gt;
+                                            &lt;/head&gt;
+                                            &lt;body&gt;
+                                                &lt;h1&gt;Hello World!&lt;/h1&gt;
+                                                &lt;p&gt;This is my first CSS example&lt;/p&gt;
+                                            &lt;/body&gt;
+                                            &lt;/html&gt;
+                                        </code>
+                                    </pre>
+                            </p>
+                            <p>El archivo CSS se ve así:</p>
+                            <p>
+                            <pre>
+                                    <code>
+                                        h1 {
+                                            color: blue;
+                                            background-color: yellow;
+                                            border: 1px solid black;
+                                          }
+                                          
+                                          p {
+                                            color: red;
+                                          }
+                                    </code>
+                                </pre>
+                            </p>
+                            <h5>Hoja de estilo interna</h5>
+                            <p>Una hoja de estilo interna es donde colocas tu CSS dentro de un &lt;style&gt; elemento
+                                contenido dentro del HTML &lt;head&gt;.</p>
+                            <p>La página HTML se vería así: </p>
+                            <p>
+                            <pre>
+                                    <code>
+                                        &lt;!DOCTYPE html&gt;
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;meta charset=<q>utf-8</q>&gt;
+                                            &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+                                            &lt;style&gt;
+                                                h1 {
+                                                    color: blue;
+                                                    background-color: yellow;
+                                                    border: 1px solid black;
+                                                }
+                                            
+                                                p {
+                                                    color: red;
+                                                }
+                                            &lt;/style&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;h1&gt;Hello World!&lt;/h1&gt;
+                                            &lt;p&gt;This is my first CSS example&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                    </code>
+                                </pre>
+                            </p>
+                            <h5>Estilos en línea</h5>
+                            <p>Los estilos en línea son declaraciones CSS que afectan solo a un elemento, contenido
+                                dentro de un styleatributo.</p>
+                            <p>La página HTML se vería así: </p>
+                            <p>
+                            <pre>
+                                    <code>
+                                        &lt;!DOCTYPE html&gt;
+                                        &lt;html&gt;
+                                        &lt;head&gt;
+                                            &lt;meta charset=<q>utf-8</q>&gt;
+                                            &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+                                            &lt;style&gt;
+                                                h1 {
+                                                    color: blue;
+                                                    background-color: yellow;
+                                                    border: 1px solid black;
+                                                }
+                                            
+                                                p {
+                                                    color: red;
+                                                }
+                                            &lt;/style&gt;
+                                        &lt;/head&gt;
+                                        &lt;body&gt;
+                                            &lt;h1 style=<q>color: blue;background-color: yellow;border: 1px solid black;</q>&gt;
+                                                Hello World!
+                                            &lt;/h1&gt;
+                                            &lt;p style=<q>color:red;</q>This is my first CSS example&gt;&lt;/p&gt;
+                                        &lt;/body&gt;
+                                        &lt;/html&gt;
+                                    </code>
+                                </pre>
+                            </p>
+                        </div>
+                        <div class="alert alert-primary" role="alert">
+                            La inserción en línea de código CSS no es recomendable de hacer ya que dificulta el
+                            mantenimiento y mezcla los estilos CSS con la estructura HTML.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="text-white mt-100 mb-100 pt-50 pb-50 jumbotron">
+            <div class="container text-center">
+                <p class="font-weight-light">Curso para aprender CSS</p>
+            </div>
+        </div>
+        <div class="container center-element md-bundler">
+            <div class="row bg-color-1 p-50">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/24gNhTcy6pw"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>-->
+        <div class="text-white mt-100 mb-100 pt-50 pb-50 jumbotron">
+            <div class="container text-center">
+                <p class="font-weight-light">Otros lenguajes del front-end</p>
+            </div>
+        </div>
+        <div class="container color-1 font-weight-light">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-30">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">HyperText Markup Language, hace referencia al lenguaje de marcado para
+                                la elaboración de páginas web. y se usa para definir la estructura del contenido en una
+                                página web.</p>
+                            <a href="../../pages/lenguajesfrontend/html.html" class="card-link">Saber mas ...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-30">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text pb-20">Lenguaje de programación interpretado. Se define como orientado a
+                                objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+                            <a href="../../pages/lenguajesfrontend/javascript.html" class="card-link">Saber mas ...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left pt-50 pb-50">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mr-0 pt-20">
+                    <!-- Content -->
+                    <img src="../../img/diseñoweb.jpg" alt="Imagen del pie de página" width="170px">
+                    <h5 class="text-center font-size-29 font-weight-light pt-20">Herramientas Web</h5>
+                    <p class="font-weight-light text-center">Todo sobre ellas</p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 pt-20">
+                    <p class="font-size-18 font-weight-bold text-center">
+                        <a href="../../index.html">INICIO</a>
+                    </p>
+                    <p class="font-size-18 font-weight-bold text-center">
+                        <a href="#">CATEGORÍAS</a>
+                    </p>
+                    <p class="font-size-18 font-weight-bold text-center">
+                        <a href="#">NOSOTROS</a>
+                    </p>
+                    <p class="font-size-18 font-weight-bold text-center">
+                        <a href="../../pages/contact.html">CONTACTO</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4  pt-20">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold mb-20">Contact</h6>
+                    <p class="font-weight-light">
+                        Tejina, La Laguna, 38260, ES</p>
+                    <p class="font-weight-light">
+                        chernandezdia@uoc.edu</p>
+                    <p class="font-weight-light">
+                        + 01 234 567 88</p>
+                    <p class="font-weight-light">
+                        + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 copyright-bkg">© 2020 Copyright:
+            <a href="https://www.uoc.edu/portal/es/index.html"> Carla Hernández Díaz</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+
+
+</html>
